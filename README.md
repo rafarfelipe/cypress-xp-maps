@@ -319,6 +319,14 @@ Como habilitar no GitHub:
 
 Depois do deploy, o link aparece no job “Deploy to GitHub Pages” e também em **Settings → Pages**.
 
+### Link do relatório (Pages)
+
+- URL: https://rafarfelipe.github.io/cypress-xp-maps/
+
+### Status do pipeline
+
+[![E2E (Cypress) + Allure (Pages)](https://github.com/rafarfelipe/cypress-xp-maps/actions/workflows/allure-pages.yml/badge.svg)](https://github.com/rafarfelipe/cypress-xp-maps/actions/workflows/allure-pages.yml)
+
 ---
 
 ## Specs existentes (E2E)

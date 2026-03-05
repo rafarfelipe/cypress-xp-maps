@@ -66,6 +66,35 @@ jobs:
         working-directory: web
         run: npx cypress run
 
+      - name: Add Allure metadata (Environment/Executor)
+        if: always()
+        working-directory: web
+        run: |
+          mkdir -p allure-results
+
+          cat > allure-results/environment.properties <<EOF
+          BASE_URL=${BASE_URL}
+          BASE_API=${BASE_API}
+          DATABASE_NAME=${DATABASE_NAME}
+          EOF
+
+          owner="${GITHUB_REPOSITORY%/*}"
+          repo="${GITHUB_REPOSITORY#*/}"
+          report_url="https://${owner}.github.io/${repo}/"
+          build_url="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+
+          cat > allure-results/executor.json <<EOF
+          {
+            "name": "GitHub Actions",
+            "type": "github",
+            "buildName": "${GITHUB_WORKFLOW} #${GITHUB_RUN_NUMBER}",
+            "buildOrder": ${GITHUB_RUN_NUMBER},
+            "buildUrl": "${build_url}",
+            "reportUrl": "${report_url}",
+            "commit": "${GITHUB_SHA}"
+          }
+          EOF
+
       - name: Generate Allure report
         if: always()
         working-directory: web
