@@ -1,4 +1,8 @@
 # root ignore (repo-level)
+.DS_Store
+.AppleDouble
+.LSOverride
+
 .env
 
 # Allure
