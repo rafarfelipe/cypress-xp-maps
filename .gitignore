@@ -1,0 +1,14 @@
+# root ignore (repo-level)
+.env
+
+# Allure
+web/allure-results/
+web/allure-report/
+web/allure-history/
+
+# Cypress artifacts
+web/cypress/videos/
+web/cypress/screenshots/
+
+# Logs
+*.log

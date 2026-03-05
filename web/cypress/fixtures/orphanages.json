@@ -1,0 +1,46 @@
+{
+  "create": {
+    "name": "Lar sementes do amanhã",
+    "description": "Acolhimento institucional para crianças e adolescentes, com rotina estruturada, apoio escolar e atividades recreativas. a equipe promove cuidado integral, fortalecimento de vínculos e desenvolvimento em um ambiente seguro e acolhedor.",
+    "opening_hours": "Segunda a Sexta, 08:00 as 17:00",
+    "open_on_weekends": false,
+    "position": {
+      "latitude": -23.9819,
+      "longitude": -46.3053
+    },
+    "image": "kids-playground-1.png"
+  },
+  "duplicate": {
+    "name": "Casa do pequeno sol",
+    "description": "Espaço de acolhimento com apoio psicossocial, reforço escolar e oficinas culturais. o atendimento busca estimular habilidades socioemocionais e a convivência comunitária, respeitando a individualidade de cada criança.",
+    "opening_hours": "Segunda a Sexta, 09:00 as 18:00",
+    "open_on_weekends": true,
+    "position": {
+      "latitude": -23.951126077176387,
+      "longitude": -46.33994042873383
+    },
+    "image": "kids-playground-8.png"
+  },
+  "map": {
+    "name": "Instituto novo caminho",
+    "description": "Acolhimento temporário com suporte para reintegração familiar e acompanhamento multiprofissional. são realizadas atividades pedagógicas, recreação orientada e cuidados diários, com foco em proteção e dignidade.",
+    "opening_hours": "Segunda a Sexta, 08:00 as 17:00",
+    "open_on_weekends": true,
+    "position": {
+      "latitude": -24.01357858450451,
+      "longitude": -46.40270948410034
+    },
+    "image": "kids-playground-2.png"
+  },
+  "required": {
+    "name": "Casa Criança Feliz",
+    "description": "Instituição que oferece moradia, alimentação adequada, educação complementar e acompanhamento psicológico para crianças acolhidas. O objetivo é proporcionar um ambiente seguro e estimulante para o desenvolvimento emocional e social.",
+    "opening_hours": "Segunda a Sexta, 08:00 as 17:00",
+    "open_on_weekends": false,
+    "position": {
+      "latitude": -23.9819,
+      "longitude": -46.3053
+    },
+    "image": "kids-playground-6.png"
+  }
+}
